@@ -1,0 +1,36 @@
+@import './global';
+
+* {
+    font-family: 'Anton', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+
+.app {
+    background-color: $white;
+    height: 100vh;
+    
+
+    .sections {
+        width: 100%;
+        height: calc(100vh - #{$topbarHeight});
+        background-color: $light;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; //Firefox
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+
+        > *{
+            height: calc(100vh - #{$topbarHeight});
+            scroll-snap-align: start;
+            padding-left: 20vw;
+            padding-right: 20vw;
+        }
+
+    }
+    
+}

@@ -3,6 +3,8 @@ import Intro from './components/intro/Intro'
 import Works from './components/works/Works'
 import About from './components/about/About'
 
+import './App.scss'
+
 function App() {
   return (
     <div className="app">
