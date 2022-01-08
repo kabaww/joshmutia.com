@@ -31,7 +31,7 @@ p {
     .sections {
         width: 100%;
         height: calc(100vh - #{$topbarHeight});
-        background-color: $light;
+        //background-color: $light;
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         

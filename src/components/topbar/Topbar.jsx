@@ -1,15 +1,23 @@
 import "./topbar.scss"
-import { Mail } from '@mui/icons-material';
 
-export default function Topbar() {
+import Menu from '../menu/Menu'
+
+export default function Topbar({menuOpen, setMenuOpen}) {
     return (
-        <div className="topbar">
+        <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="topbarLeft">
                     <a href="#intro"><h1 className="myName">JOSH MUTIA</h1></a>
                 </div>
                 <div className="topbarRight">
-                    right side
+                    <div className="navbar">
+                        <Menu />
+                    </div>
+                    <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
+                        <span className="line1"></span>
+                        <span className="line2"></span>
+                        <span className="line3"></span>
+                    </div>
                 </div>
             </div>
         </div>
