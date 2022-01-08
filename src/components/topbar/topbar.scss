@@ -5,15 +5,32 @@
     height: $topbarHeight;
     font-size: 0.5rem;
     color: $black;
+
+    a, a:hover, a:visited, a:active, a:link {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .wrapper {
+        padding: 10px $pageMargin;
+        margin-top: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
+
 .myName {
+    margin-right: 200px;
     transform-origin: 0% 50%;
     transform: scalex(3);
     transition: transform 1s cubic-bezier(.32,0,.07,1);
 }
 
 .myName:hover {
-    transform: scalex(1);
+    transform: scalex(4);
+    text-decoration: none;
     transition: transform 1s cubic-bezier(.32,0,.07,1);
 }
+
