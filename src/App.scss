@@ -1,0 +1,52 @@
+@import './global';
+
+* {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+
+h4 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 800;
+}
+
+p {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+}
+
+
+
+.app {
+    background-color: $white;
+    height: 100vh;
+    
+
+    .sections {
+        width: 100%;
+        height: calc(100vh - #{$topbarHeight});
+        //background-color: $light;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        
+        scrollbar-width: none; //Firefox
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        > *{
+            height: calc(100vh - #{$topbarHeight});
+            scroll-snap-align: start;
+            padding-left: $pageMargin;
+            padding-right: $pageMargin;
+        }
+
+    }
+    
+}

@@ -1,0 +1,76 @@
+@import "../../global";
+
+.contact {
+    //background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+    .aboutLeft {
+        flex: 0.5;
+        display: flex;
+        align-items: flex-end;
+        
+
+        .imgContainer {
+            img {
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                float: right;
+            }
+        }
+    }
+
+    .aboutRight {
+        flex: 0.5;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: left;
+
+        h2 {
+            padding-top: 10vw;
+        }
+
+        .socialMedia {
+            font-size:  1rem;
+            padding-top: 20px;
+
+            ul li {
+                padding: 5px;
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                > *{
+                    padding-right: 5px;
+                }
+            }
+        }
+
+    }
+
+    @media (max-width:880px) {
+        .copyChip {
+            display: none;
+        }
+    }
+
+    @media (max-width:#{$responsive1}) {
+        flex-direction: column-reverse;
+        .aboutLeft {
+            flex: 0.5;
+            .imgContainer img {
+                height: 60%;
+                width: 60%;
+            }
+        }
+        .aboutRight {
+            flex: 0.4;
+            h2 { padding-top: 20px;}
+        }
+    }
+}
