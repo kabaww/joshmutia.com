@@ -18,6 +18,7 @@ export default function About() {
 
     const openToolTip = function () {
         setOpen(true);
+        copyEmailToClipboard();
         setTimeout(closeToolTip, 1000);
     }
 
