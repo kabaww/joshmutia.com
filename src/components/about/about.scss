@@ -34,11 +34,11 @@
         }
 
         .socialMedia {
-            font-size:  0.8rem;
-            padding-top: 10px;
+            font-size:  1rem;
+            padding-top: 20px;
 
             ul li {
-                padding-top: 5px;
+                padding: 5px;
 
                 a {
                     color: inherit;
@@ -51,6 +51,12 @@
             }
         }
 
+    }
+
+    @media (max-width:880px) {
+        .copyChip {
+            display: none;
+        }
     }
 
     @media (max-width:#{$responsive1}) {
