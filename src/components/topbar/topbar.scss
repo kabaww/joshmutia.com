@@ -20,7 +20,7 @@
         align-items: center;
         justify-content: space-between;
 
-        @media (max-width:653px) {
+        @media (max-width:#{$responsive1}) {
             .topbarRight {
 
                 ul {
@@ -30,7 +30,7 @@
             }
         }
 
-        @media (max-width:390px) {
+        @media (max-width:#{$responsive2}) {
             padding: 10px 10vw;
 
             h1 {
