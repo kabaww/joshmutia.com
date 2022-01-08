@@ -40,6 +40,11 @@
             ul li {
                 padding-top: 5px;
 
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
                 > *{
                     padding-right: 5px;
                 }

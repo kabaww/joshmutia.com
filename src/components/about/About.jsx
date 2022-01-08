@@ -19,9 +19,9 @@ export default function About() {
                 
                 <div className="socialMedia">
                     <ul>
-                        <li><FontAwesomeIcon icon={faEnvelope}/> <span>josh.mutia@benilde.edu.ph</span></li>
-                        <li><FontAwesomeIcon icon={faFacebookMessenger}/> <span>fb.me/photoshoplolpersonal</span></li>
-                        <li><FontAwesomeIcon icon={faLinkedin}/> <span>linkedin.com/in/joshmutia</span></li>
+                        <li><a href="mailto:josh.mutia@benilde.edu.ph"><FontAwesomeIcon icon={faEnvelope}/> <span>josh.mutia@benilde.edu.ph</span></a></li>
+                        <li><a href="https://fb.me/photoshoplolpersonal"><FontAwesomeIcon icon={faFacebookMessenger}/> <span>fb.me/photoshoplolpersonal</span></a></li>
+                        <li><a href="https://linkedin.com/in/joshmutia"><FontAwesomeIcon icon={faLinkedin}/> <span>linkedin.com/in/joshmutia</span></a></li>
                     </ul>
                 </div>
             </div>
