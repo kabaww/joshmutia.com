@@ -9,7 +9,7 @@ import Tooltip from '@mui/material/Tooltip';
 import { useState } from "react";
 
 export default function About() {
-    const myEmail = 'josh.mutia@benilde.edu.ph';
+    const myEmail = 'hello@joshmutia.com';
     const [open, setOpen] = useState(false);
 
     const closeToolTip = function () {
@@ -42,7 +42,7 @@ export default function About() {
                     <ul>
                         <li>
                             <FontAwesomeIcon icon={faEnvelope}/> 
-                            <span>josh.mutia@benilde.edu.ph</span> 
+                            <span>{myEmail}</span> 
                             <Tooltip
                                 PopperProps={{
                                 disablePortal: true,
