@@ -7,7 +7,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
         <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="topbarLeft">
-                    <a href="#intro"><h1 className="myName">JOSH MUTIA</h1></a>
+                    <a href="#works"><h1 className="myName">JOSH MUTIA</h1></a>
                 </div>
                 <div className="topbarRight">
                     <div className="navbar">

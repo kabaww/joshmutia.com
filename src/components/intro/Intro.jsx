@@ -1,15 +1,16 @@
 import "./intro.scss"
+import VideoPlayer from "../videojs/videojs"
+import React from 'react';
+import works from "../works/Workslist"
 
 export default function Intro() {
     return (
         <div className="intro" id="intro">
-            <div className="highlightVideo">
-                <iframe src="https://player.vimeo.com/video/649567721?h=9646d300ce" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-                </iframe>
-            </div>
+            <VideoPlayer {...works[1].options} autoplay="any" />
             <div className="highlightVideoText">
-                <span>Homeroom (2022)</span>
-                <span>post production</span>
+                <span>{works[1].lefttext}</span>
+                <span>{works[1].centertext}</span>
+                <span>{works[1].righttext}</span>
             </div>
         </div>
     )

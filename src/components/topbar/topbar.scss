@@ -1,7 +1,9 @@
 @import "../../global";
 
 .topbar {
-    width: 100%;
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
     height: $topbarHeight;
     font-size: 0.5rem;
     color: $black;
@@ -14,10 +16,11 @@
     }
 
     .wrapper {
-        padding: 10px $pageMargin;
-        margin-top: 150px;
+        width: 100vw;
+        padding: 0px $pageMargin;
+        padding-bottom: 2vh;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
 
         @media (max-width:#{$responsive1}) {

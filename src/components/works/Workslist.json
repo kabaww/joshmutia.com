@@ -1,0 +1,44 @@
+{
+    "1" : {
+        "options": {
+            "sources" : [{
+                "src": "https://res.cloudinary.com/icantsleep/video/upload/v1671521503/MUTIA_BALDE-AT-BROTSA_TRAILER_qqw9x6.mp4",
+                "type": "video/mp4"
+            }],
+            "poster" : "https://res.cloudinary.com/icantsleep/image/upload/v1671528089/vlc_24-November-22_08-41-31_298_tq9mrk.png"
+        },
+        "trailer": "https://res.cloudinary.com/icantsleep/video/upload/v1671521503/MUTIA_BALDE-AT-BROTSA_TRAILER_qqw9x6.mp4",
+        "thumbnail": "https://res.cloudinary.com/icantsleep/image/upload/v1671528089/vlc_24-November-22_08-41-31_298_tq9mrk.png",
+        "lefttext": "Balde at Brotsa (2022)",
+        "centertext": "Documentary",
+        "righttext": "In-competition"
+    },
+    "2" : {
+        "options": {
+            "sources" : [{
+                "src": "https://res.cloudinary.com/icantsleep/video/upload/v1653003563/HOMEROOM_TRAILER1_wszf0i.mp4",
+                "type": "video/mp4"
+            }],
+            "poster" : "https://res.cloudinary.com/icantsleep/image/upload/v1671528104/TRAILER_Thumbnail_nmhrzn.jpg"
+        },
+        "trailer": "https://res.cloudinary.com/icantsleep/video/upload/v1653003563/HOMEROOM_TRAILER1_wszf0i.mp4",
+        "thumbnail": "https://res.cloudinary.com/icantsleep/image/upload/v1671528104/TRAILER_Thumbnail_nmhrzn.jpg",
+        "lefttext": "Homeroom (2021)",
+        "centertext": "Documentary",
+        "righttext": "Work-in-progress"
+    },
+    "3" : {
+        "options": {
+            "controls": false,
+            "sources" : [{
+                "src": "https://res.cloudinary.com/icantsleep/video/upload/v1653003563/HOMEROOM_TRAILER1_wszf0i.mp4",
+                "type": "video/mp4"
+            }],
+            "poster" : "https://res.cloudinary.com/icantsleep/image/upload/v1671529115/THUMBNAIL_qpxx8w.png"
+        },
+        "thumbnail": "https://res.cloudinary.com/icantsleep/image/upload/v1671529115/THUMBNAIL_qpxx8w.png",
+        "lefttext": "Hatol (2021)",
+        "centertext": "Interactive, VR",
+        "righttext": "WIP, Private screenings"
+    }
+}

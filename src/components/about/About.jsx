@@ -2,14 +2,14 @@ import "./about.scss"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faFacebookMessenger, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import Chip from '@mui/material/Chip';
 import Tooltip from '@mui/material/Tooltip';
 import { useState } from "react";
 
 export default function About() {
-    const myEmail = 'josh.mutia@benilde.edu.ph';
+    const myEmail = 'hello@joshmutia.com';
     const [open, setOpen] = useState(false);
 
     const closeToolTip = function () {
@@ -42,7 +42,7 @@ export default function About() {
                     <ul>
                         <li>
                             <FontAwesomeIcon icon={faEnvelope}/> 
-                            <span>josh.mutia@benilde.edu.ph</span> 
+                            <span>hello@joshmutia.com</span> 
                             <Tooltip
                                 PopperProps={{
                                 disablePortal: true,
@@ -59,7 +59,6 @@ export default function About() {
                             </Tooltip>
                             
                         </li>
-                        <li><a href="https://fb.me/photoshoplolpersonal" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookMessenger}/> <span>fb.me/photoshoplolpersonal</span></a></li>
                         <li><a href="https://linkedin.com/in/joshmutia" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin}/> <span>linkedin.com/in/joshmutia</span></a></li>
                     </ul>
                 </div>

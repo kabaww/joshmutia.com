@@ -16,8 +16,8 @@ function App() {
       <Menu fullMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro />
-        {/* <Works /> */}
         <About />
+        <Works />
       </div>
     </div>
   );
