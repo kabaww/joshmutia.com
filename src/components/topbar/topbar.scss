@@ -5,6 +5,11 @@
     align-content: flex-end;
     justify-content: center;
     height: $topbarHeight;
+
+    @media (max-width:#{$responsiveMED}) {
+        height: $topbarHeightMED;
+    }
+
     font-size: 0.5rem;
     color: $black;
     z-index: 3;
@@ -23,7 +28,10 @@
         align-items: flex-end;
         justify-content: space-between;
 
-        @media (max-width:#{$responsive1}) {
+        @media (max-width:#{$responsiveSML}) {
+
+            padding: 0px $pageMarginSML;
+
             .topbarRight {
 
                 ul {
@@ -33,17 +41,12 @@
             }
         }
 
-        @media (max-width:#{$responsive2}) {
-            padding: 10px 10vw;
+        @media (max-width:#{$responsiveMED}) {
+            padding: 0px $pageMarginMED; 
+        }
 
-            h1 {
-                font-size: 0.6rem;
-            }
-
-            .topbarLeft {
-                width: 150px;
-            }
-            
+        @media (max-width:#{$responsiveLRG}) {
+            padding: 0px $pageMarginLRG; 
         }
 
         .topbarLeft {

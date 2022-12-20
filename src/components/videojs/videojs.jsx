@@ -33,5 +33,5 @@ export default class VideoPlayer extends React.Component {
 }
 
 VideoPlayer.defaultProps = {
-  autoplay: false, controls: true, responsive: true, disablePictureInPicture: true, aspectRatio: "16:9", skin: 'vjs-jlm', fluid: false, preload: 'auto'
+  autoplay: false, controls: true, responsive: true, disablePictureInPicture: true, skin: 'vjs-jlm', fluid: true, preload: 'auto'
 }

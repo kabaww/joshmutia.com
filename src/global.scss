@@ -5,7 +5,13 @@ $highlightDark: #A4303F;
 $highlightLight: #3772FF;
 
 $topbarHeight: 150px;
-$pageMargin: 20vw;
+$topbarHeightMED: 150px;
 
-$responsive1: 653px;
-$responsive2: 390px;
+$pageMargin: 20vw;
+$pageMarginLRG: 10vw;
+$pageMarginMED: 5vw;
+$pageMarginSML: 0;
+// use max-width!!!!!!!!!
+$responsiveLRG: 1199.98px;
+$responsiveMED: 991.98px;
+$responsiveSML: 767.98px;

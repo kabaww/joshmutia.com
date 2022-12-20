@@ -28,7 +28,7 @@ p {
     height: 100vh;
     
 
-    .sections {
+    .sections  {
         width: 100%;
         height: calc(100vh - #{$topbarHeight});
         //background-color: $light;
@@ -46,6 +46,28 @@ p {
             padding-left: $pageMargin;
             padding-right: $pageMargin;
         }
+
+        @media only screen and (max-width: $responsiveLRG) {
+            > *{
+                padding-left: $pageMarginLRG;
+                padding-right: $pageMarginLRG;
+            }
+        }
+
+        @media only screen and (max-width: $responsiveMED) {
+            > *{
+                padding-left: $pageMarginMED;
+                padding-right: $pageMarginMED;
+            }
+        }
+
+        @media only screen and (max-width: $responsiveSML) {
+            > *{
+                padding-left: $pageMarginSML;
+                padding-right: $pageMarginSML;
+            }
+        }
+        
 
     }
     

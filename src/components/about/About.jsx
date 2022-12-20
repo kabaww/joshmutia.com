@@ -28,11 +28,7 @@ export default function About() {
 
     return (
         <div className='contact' id="contact">
-            <div className="aboutLeft">
-                <div className="imgContainer">
-                    <img src="josh-photo-field.png" alt="" />
-                </div>
-            </div>
+            <img src="https://res.cloudinary.com/icantsleep/image/upload/v1671538460/josh-photo-field_u86lzl.png" alt="" />
             <div className="aboutRight">
                 <h2> Hello! I'm Josh.</h2>
 
