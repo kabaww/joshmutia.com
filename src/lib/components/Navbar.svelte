@@ -34,11 +34,13 @@
             <h1 class="transition-all duration-1000 ease-bruh anton-font h3 origin-center transform-gpu scale-x-3x hover:scale-x-4x"><a href='/'>JOSH MUTIA</a></h1>
         </div>
         <div class="block sm:hidden">
-            <div class="flex flex-col transform-gpu scale-x-3x bg-surface-900 dark:bg-white text-surface-100 dark:text-surface-900 anton-font h4 p-1 pt-3 pb-3">
-                <p>JLM</p>
-                <p class="-mb-3 -mt-3">JLM</p>
-                <p>JLM</p>
-            </div>
+            <a href='/'>
+                <div class="flex flex-col transform-gpu scale-x-3x bg-surface-900 dark:bg-white text-surface-100 dark:text-surface-900 anton-font h4 p-1 pt-3 pb-3">
+                    <p>JLM</p>
+                    <p class="-mb-3 -mt-3">JLM</p>
+                    <p>JLM</p>
+                </div>
+            </a>
         </div>
         <h1 class="transition-color duration-1000 ease-bruh h1 {$page.route.id === '/dev' ? styles.dev.selected : styles.dev.unselected}"><a href='/dev'>DEV</a></h1>
     </div>
