@@ -21,7 +21,7 @@
             <h1 class="transition-all duration-1000 ease-bruh anton-font h3 origin-center transform-gpu scale-x-3x hover:scale-x-4x"><a href='/'>JOSH MUTIA</a></h1>
         </div>
         <div class="block sm:hidden">
-            <div class="flex flex-col gap-[-5px] bg-surface-900 transform-gpu scale-x-3x text-surface-100 anton-font h4 p-1 pt-3 pb-3">
+            <div class="flex flex-col transform-gpu scale-x-3x bg-surface-900 dark:bg-white text-surface-100 dark:text-surface-900 anton-font h4 p-1 pt-3 pb-3">
                 <p>JLM</p>
                 <p class="-mb-3 -mt-3">JLM</p>
                 <p>JLM</p>
