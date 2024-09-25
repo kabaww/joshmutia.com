@@ -1,5 +1,18 @@
 <script lang="ts">
 	import { LightSwitch } from '@skeletonlabs/skeleton';
+    import { page } from '$app/stores'
+
+    let styles = {
+        vid: {
+            unselected : 'hover:text-primary-500',
+            selected : 'hover:text-inherit text-primary-500'
+        },
+        dev: {
+            unselected : 'hover:text-secondary-500',
+            selected : 'hover:text-inherit text-secondary-500'
+        },
+    }
+
 </script>
 
 <div class="container mx-auto p-4 mt-2 sm:mt-40">
@@ -16,7 +29,7 @@
     </div>
 
     <div class="flex gap-5 text-center justify-between items-center pt-2 pb-8">
-        <h1 class="transition-color duration-1000 ease-bruh h1 hover:text-primary-500"><a href='/vid'>VID</a></h1>
+        <h1 class="transition-color duration-1000 ease-bruh h1 {$page.route.id === '/vid' ? styles.vid.selected : styles.vid.unselected}"><a href='/vid'>VID</a></h1>
         <div class="hidden sm:block">
             <h1 class="transition-all duration-1000 ease-bruh anton-font h3 origin-center transform-gpu scale-x-3x hover:scale-x-4x"><a href='/'>JOSH MUTIA</a></h1>
         </div>
@@ -27,7 +40,7 @@
                 <p>JLM</p>
             </div>
         </div>
-        <h1 class="transition-color duration-1000 ease-bruh h1 hover:text-secondary-500"><a href='/dev'>DEV</a></h1>
+        <h1 class="transition-color duration-1000 ease-bruh h1 {$page.route.id === '/dev' ? styles.dev.selected : styles.dev.unselected}"><a href='/dev'>DEV</a></h1>
     </div>
 
 </div>
