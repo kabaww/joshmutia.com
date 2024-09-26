@@ -38,7 +38,7 @@
 	        <div class="arrow bg-success-300" />
             <div><p>Copied to clipboard! 📋</p></div>
         </div>
-        <div class="sm:ml-40 mt-4" transition:fly={{ delay: 1000, duration: 5000, y: 100, x: 100, easing: expoOut}} >
+        <div class="sm:ml-40 sm:mt-20 mt-10" transition:fly={{ delay: 1000, duration: 5000, y: 100, x: 100, easing: expoOut}} >
             <img src="https://ik.imagekit.io/joshmutia/JLM/josh-photo-field.png?tr:w-400,h-400,cm-pad_resize,bg-FFFFFF00" class="max-w-[400px] max-h-[400px] sm:max-w-[400px] sm:max-h-[400px] pt-4" alt="me 😎" />
         </div>
     {/if}
