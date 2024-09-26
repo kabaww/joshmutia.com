@@ -49,6 +49,9 @@
 	<div class="w-full h-full bg-polkadots">
 		<div class="absolute top-0 left-0 text-xs self-center opacity-10 -mt-1 p-4">art is for others</div>
 		<div class="absolute top-0 right-0 text-xs self-center opacity-10 -mt-1 p-4">art is for others</div>
+		<div class="hidden sm:block absolute bottom-0 right-0 text-xs self-center opacity-10 -mt-1 p-4">art is for others</div>
+		<div class="hidden sm:block absolute bottom-0 left-0 text-xs self-center opacity-10 -mt-1 p-4">art is for others</div>
+
 	
 		<Navbar {data}/>
 		{#key data.pathname}
