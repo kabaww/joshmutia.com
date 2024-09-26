@@ -10,6 +10,14 @@
     import path from 'path';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
+	import { initializeStores, Modal } from '@skeletonlabs/skeleton';
+    import LightboxModal from '$lib/components/LightboxModal.svelte';
+	initializeStores();
+
+	const modalRegistry = {
+		lightbox : { ref: LightboxModal }
+	};
+
 	let styling = (path : string)=> {
 		switch (path) {
 			case '/vid':
@@ -36,6 +44,7 @@
 
 </script>
 
+<Modal components={modalRegistry}/>
 <div class="w-full h-full {styling(data.pathname)} transition-colors duration-500 ease-bruh overflow-x-hidden" id="bg-layer">
 	<div class="w-full h-full bg-polkadots">
 		<div class="absolute top-0 left-0 text-xs self-center opacity-10 -mt-1 p-4">art is for others</div>
