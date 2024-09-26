@@ -8,7 +8,7 @@
     ]
 </script>
 
-<div class="flex flex-col sm:items-center w-svw bottom-0 absolute">
+<div class="flex flex-col sm:items-center sm:w-svw bottom-0 fixed">
     <div class="flex flex-col p-3 w-fit shadow-xl bg-surface-100-800-token opacity-90 sm:rounded-t-xl rounded-tr-xl">
         <div class="flex flex-row justify-between items-center gap-4 text-inherit">
             {#each icons as { name, link, extraClass }}

@@ -16,7 +16,7 @@
 
 </script>
 
-<div class="container mx-auto p-4 pt-[20vh] sm:pt-40">
+<div class="container mx-auto px-4 pb-4 pt-[20vh] sm:pt-24 sm:px-0">
 
     <div class="hidden sm:block">
         <div class="container mx-auto justify-between flex">
@@ -31,7 +31,7 @@
         <LightSwitch />
     </div>
 
-    <div class="flex gap-5 text-center justify-between items-center pt-2 pb-8">
+    <div class="flex gap-5 text-center justify-between items-center pt-2">
         <h1 class="transition-color duration-1000 ease-bruh h1 underline {data.pathname === '/vid' ? styles.vid.selected : styles.vid.unselected}"><a href='/vid'>VID</a></h1>
         <div class="hidden sm:block">
             <h1 class="transition-all duration-1000 ease-bruh anton-font h3 origin-center transform-gpu scale-x-3x hover:scale-x-4x"><a href='/'>JOSH MUTIA</a></h1>

@@ -1,6 +1,6 @@
 <script lang="ts">
     export let name;
-    export let link;
+    export let link = null;
     let classes = "";
     export { classes as class };
 
@@ -9,6 +9,11 @@
         { name: 'instagram', glyph: "ea92"},
         { name: 'youtube', glyph: "ea9d"},
         { name: 'linkedin', glyph: "eac9"},
+        { name: 'unreal', glyph: "e900"},
+        { name: 'adobe', glyph: "e902"},
+        { name: 'davinci', glyph: "e901"},
+        { name: 'blender', glyph: "e903"},
+
     ]
 
     let displayIcon = icons.find(icon => icon.name === name);
