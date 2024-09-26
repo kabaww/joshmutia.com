@@ -8,15 +8,14 @@
     ]
 </script>
 
-<div class="flex flex-col items-center w-svw bottom-0 absolute">
-    <div class="flex flex-col p-4 w-fit">
-        <div class="flex flex-row justify-between items-center bg-white-backdrop-token rounded-t-lg gap-4 text-inherit">
+<div class="flex flex-col sm:items-center w-svw bottom-0 absolute">
+    <div class="flex flex-col p-3 w-fit shadow-xl bg-surface-100-800-token opacity-90 sm:rounded-t-xl rounded-tr-xl">
+        <div class="flex flex-row justify-between items-center gap-4 text-inherit">
             {#each icons as { name, link, extraClass }}
                 <Icon {name} {link} class={`transform-gpu hover:-translate-y-0.5 transition-all duration-500 ease-bruh ${extraClass}`} />
             {/each}
             <!-- <div class="text-sm">Made with 💖</div> -->
         </div>
-        <div class="text-xs self-center opacity-20">art is for others</div>
     </div>
 </div>
 

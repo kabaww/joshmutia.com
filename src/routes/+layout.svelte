@@ -37,14 +37,19 @@
 </script>
 
 <div class="w-full h-full {styling(data.pathname)} transition-colors duration-500 ease-bruh overflow-x-hidden" id="bg-layer">
-	<Navbar {data}/>
-	{#key data.pathname}
-		<div in:fly={transition(data.pathname).in} out:fly={transition(data.pathname).out}>
-		<!-- <div in:fly={{delay: 250, duration: 250, y: 100}} out:fly={{duration: 250, y: 100}}> -->
-			<slot />
-		</div>
-	{/key}
-	<Footer />
+	<div class="w-full h-full bg-polkadots">
+		<div class="absolute top-0 left-0 text-xs self-center opacity-10 -mt-1 p-4">art is for others</div>
+		<div class="absolute top-0 right-0 text-xs self-center opacity-10 -mt-1 p-4">art is for others</div>
+	
+		<Navbar {data}/>
+		{#key data.pathname}
+			<div in:fly={transition(data.pathname).in} out:fly={transition(data.pathname).out}>
+			<!-- <div in:fly={{delay: 250, duration: 250, y: 100}} out:fly={{duration: 250, y: 100}}> -->
+				<slot />
+			</div>
+		{/key}
+		<Footer />
+	</div>
 </div>
 
 

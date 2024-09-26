@@ -16,7 +16,7 @@
 
 </script>
 
-<div class="container mx-auto p-4 pt-40 sm:pt-40">
+<div class="container mx-auto p-4 pt-[20vh] sm:pt-40">
 
     <div class="hidden sm:block">
         <div class="container mx-auto justify-between flex">
