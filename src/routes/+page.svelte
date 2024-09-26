@@ -30,9 +30,9 @@
             <div class="text-5xl sm:text-9xl h1 hover:text-secondary-500 transition-colors ease-bruh duration-500" transition:fly={{ delay: 250, duration: 5000, x: 100, easing: expoOut}}><a href="/dev">WEBDEV</a></div>
             <div class="text-sm italic opacity-50" transition:fly={{ delay: 1000, duration: 5000, y: 100, easing: expoOut}}><a href="https://twitch.tv/kabaww">(and other stuff)</a></div>
         </div>
-        <div class="flex flex-col align-middle items-center mt-14" transition:blur={{ delay: 1500, duration: 5000, easing: expoOut}}>
+        <div class="flex flex-col align-middle items-center mt-14 drop-shadow-[0_0_25px_rgba(var(--color-primary-500))]" transition:blur={{ delay: 1500, duration: 5000, easing: expoOut}}>
             <div class="anton-font h4">HIRE ME:</div>
-            <button use:clipboard={'hello@joshmutia.com'} use:popup={{event: 'click', target: 'copypopup', placement: 'bottom'}}>hello@joshmutia.com</button>
+            <button class="drop-shadow-md" use:clipboard={'hello@joshmutia.com'} use:popup={{event: 'click', target: 'copypopup', placement: 'bottom'}}>hello@joshmutia.com</button>
         </div>
         <div class="card p-2.5 mt-2.5 w-fit shadow-xl variant-soft-tertiary" data-popup="copypopup">
 	        <div class="arrow bg-success-300" />
