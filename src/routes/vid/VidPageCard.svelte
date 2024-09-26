@@ -6,7 +6,7 @@
     export { extraClasses as class };
 
 </script>
-<div class={`${extraClasses} card rounded-lg overflow-hidden variant-glass-primary dark:variant-soft-primary text-base-token dark:text-dark-token`}>
+<div class={`${extraClasses} card rounded-lg overflow-hidden variant-glass-primary dark:variant-soft-primary text-base-token dark:text-dark-token border-secondary-500 dark:border-secondary-300 border-2`}>
     <!-- bg-surface-600 dark:bg-primary-300 text-primary-300 dark:text-surface-600 -->
     <div class="flex flex-col size-full overflow-hidden">
         <img class="size-full object-cover" src="https://ik.imagekit.io/joshmutia/joshmutia.com/duotone/editbts.png" alt="Davinci Resolve" />

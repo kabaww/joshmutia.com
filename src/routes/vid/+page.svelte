@@ -1,16 +1,30 @@
 <script lang="ts">
+    import { getModalStore, type ModalSettings } from "@skeletonlabs/skeleton";
     import VidPageCard from "./VidPageCard.svelte";
+    import { vidWorks as items } from "./vid-works";
+    import { onMount } from "svelte";
+    let modalStore = getModalStore();
 
-    let items = [
-        { img: 'https://ik.imagekit.io/joshmutia/joshmutia.com/duotone/baldeatbrotsa.png?tr:w-auto', title: 'Balde at Brotsa (2022)', subtitle : '', class : 'col-span-2 row-span-1 sm:row-span-1'},
-        { img: 'https://ik.imagekit.io/joshmutia/joshmutia.com/duotone/homeroom.png?tr:w-auto', title: 'Homeroom (2020)', subtitle : '', class : 'sm:row-span-1'},
-        { img: 'https://ik.imagekit.io/joshmutia/joshmutia.com/duotone/hatol.png?tr:w-auto', title: 'Hatol (2020)', subtitle : '', class : 'row-span-1 sm:row-span-1'},
-        { component: true, class : 'sm:row-span-2 row-span-4 text-xs' },
-        { img: 'https://ik.imagekit.io/joshmutia/joshmutia.com/duotone/lemondou.png?tr:w-auto', title: 'Lemon Dou', subtitle : '', class : 'row-span-2 sm:row-span-2'},
-        { img: 'https://ik.imagekit.io/joshmutia/joshmutia.com/duotone/garuda.png?tr:w-auto', title: 'Garuda Gear', subtitle : '', class : 'row-span-2 sm:row-span-1'},
-        { img: 'https://ik.imagekit.io/joshmutia/joshmutia.com/duotone/nike.png?tr:w-auto', title: 'Nike Golf', subtitle : '', class : 'row-span-2 col-span-2 sm:row-span-3'},
+    let triggerModal : (item: any) => null;
 
-    ]
+    onMount(() => {
+        console.log('vid page mounted')
+        triggerModal = (item) => {
+            console.log('opening modal for ', item)
+            modalStore.trigger({
+                type: 'component',
+                component: 'lightbox',
+                meta: {
+                    video: item.video,
+                    title: item.title,
+                    subtitle: item.subtitle
+                }
+            } as ModalSettings );
+
+            return null;
+        }
+
+    });
 
 </script>
 
@@ -21,12 +35,13 @@
             {#if item.component}
                 <VidPageCard class={item.class} />
             {:else}
-                <div class={`rounded-lg overflow-hidden ${item.class}`}>
-                    <img src={item.img} alt={item.title} class={`object-cover object-center size-full`}/>
-                </div>
+                <button class={`rounded-lg overflow-hidden ${item.class}`} on:click={triggerModal(item)}>
+                    <img src={item.img} alt={item.title} class={`object-cover object-center size-full hover:brightness-150 hover:scale-105 transition-all duration-500 ease-bruh`} />
+                </button>
             {/if}
 
         {/each}
 
     </div>
+    <div class="text-xs mt-4 text-right">...adding more soon 🚧</div>
 </div>
