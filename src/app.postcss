@@ -4,6 +4,11 @@
 @tailwind variants;
 
 @font-face {
+	font-family: 'icomoon';
+	src: url('/fonts/icomoon.ttf');
+}
+
+@font-face {
 	font-family: 'Anton';
 	src: url('/fonts/Anton-Regular.ttf');
 }
@@ -18,6 +23,10 @@
 	src: url('/fonts/ClimateCrisis-Regular.ttf');
 }
 
+.icomoon {
+    font-family: 'icomoon';
+}
+
 .anton-font {
     font-family: 'Anton', sans-serif;
 }
@@ -30,8 +39,18 @@
 
 html, body { @apply h-full; }
 body {
-    background-image: 
-        radial-gradient(rgba(var(--color-primary-300) / 0.05) 0.8px, transparent 0.8px);
-    background-size: 16px 16px;
+    @apply transition-colors duration-500 ease-bruh;
     font-display: swap;
+}
+
+.bg-polkadots {
+    background-image: 
+        radial-gradient(rgba(var(--color-primary-600) / 0.05) 0.8px, transparent 0.8px);
+    background-size: 16px 16px;
+}
+
+.dark .bg-polkadots {
+    background-image: 
+        radial-gradient(rgba(var(--color-primary-500) / 0.05) 0.8px, transparent 0.8px);
+    background-size: 16px 16px;
 }
