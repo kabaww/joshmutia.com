@@ -16,7 +16,8 @@
                 component: 'lightbox',
                 meta: {
                     video: item.video,
-                    title: item.title
+                    title: item.title,
+                    subtitle: item.subtitle
                 }
             } as ModalSettings );
 
@@ -42,4 +43,5 @@
         {/each}
 
     </div>
+    <div class="text-xs mt-4 text-right">...adding more soon 🚧</div>
 </div>
