@@ -1,34 +1,47 @@
 <script lang="ts">
-    import { page } from '$app/stores';
     import Navbar from '$lib/components/Navbar.svelte';
+    import { fade, fly } from 'svelte/transition';
 	import '../app.postcss';
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
+    import path from 'path';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
-	let styling : string;
-
-	$ : {
-		let currentPage = $page.route.id;
-		if (currentPage === '/vid') {
-			// styling = 'bg-gradient-to-br from-primary-500/10';
-			styling = 'bg-primary-500/5'
-			
-		} else if (currentPage === '/dev') {
-			// styling = 'bg-gradient-to-bl from-secondary-500/10';
-			styling = 'bg-secondary-500/5'
-		} else {
-			styling = 'bg-transparent';
+	let styling = (path : string)=> {
+		switch (path) {
+			case '/vid':
+				return 'bg-primary-500/5';
+			case '/dev':
+				return 'bg-secondary-500/5';
+			default:
+				return 'bg-transparent';
 		}
-		console.log(styling, currentPage);
-	}
+	};
+
+	let transition = (path : string) => {
+		switch (path) {
+			case '/vid':
+				return { in : {delay: 250, duration: 250, x: -100}, out: {duration: 250, x: 100}};
+			case '/dev':
+				return { in : {delay: 250, duration: 250, x: 100}, out: {duration: 250, x: -100}};
+			default:
+				return { in : {delay: 250, duration: 250, y: 100}, out: {duration: 250, y: 100}};
+		}
+	};
+
+	export let data;
 
 </script>
 
-<div class="w-full h-full {styling} transition-colors duration-500 ease-bruh" id="bg-layer">
-	<Navbar />
-	<slot />
+<div class="w-full h-full {styling(data.pathname)} transition-colors duration-500 ease-bruh overflow-x-hidden" id="bg-layer">
+	<Navbar {data}/>
+	{#key data.pathname}
+		<div in:fly={transition(data.pathname).in} out:fly={transition(data.pathname).out}>
+		<!-- <div in:fly={{delay: 250, duration: 250, y: 100}} out:fly={{duration: 250, y: 100}}> -->
+			<slot />
+		</div>
+	{/key}
 </div>
 
 
