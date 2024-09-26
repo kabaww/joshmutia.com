@@ -1,5 +1,7 @@
 <script lang="ts">
     import Navbar from '$lib/components/Navbar.svelte';
+    import Footer from '$lib/components/Footer.svelte';
+
     import { fade, fly } from 'svelte/transition';
 	import '../app.postcss';
 	// Floating UI for Popups
@@ -42,6 +44,7 @@
 			<slot />
 		</div>
 	{/key}
+	<Footer />
 </div>
 
 
