@@ -15,16 +15,18 @@
 
 </script>
 
-<div class="container mx-auto p-4 mt-2 sm:mt-40">
+<div class="container mx-auto p-4 pt-40 sm:pt-40">
 
     <div class="hidden sm:block">
         <div class="container mx-auto justify-between flex">
             <LightSwitch />
-            <LightSwitch />
+            <div class="transform-gpu scale-[-1]">
+                <LightSwitch />
+            </div>
         </div>
     </div>
 
-    <div class="fixed sm:hidden bg-surface-500 dark:bg-surface-100 p-3 bottom-0 right-0 rounded-tl-2xl" >
+    <div class="fixed sm:hidden bg-surface-500 dark:bg-surface-100 p-3 bottom-0 right-0 rounded-tl-2xl z-10" >
         <LightSwitch />
     </div>
 
