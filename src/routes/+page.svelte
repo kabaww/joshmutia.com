@@ -28,7 +28,7 @@
         <div class="flex flex-col align-middle items-center overflow-x-clip">
             <div class="text-5xl sm:text-9xl h1 hover:text-primary-500 focus:text-primary-500 transition-colors ease-bruh duration-500" transition:fly={{ delay: 250, duration: 5000, x: -100, easing: expoOut}}><a href="/vid">VIDEO</a></div>
             <div class="text-5xl sm:text-9xl h1 hover:text-secondary-500 transition-colors ease-bruh duration-500" transition:fly={{ delay: 250, duration: 5000, x: 100, easing: expoOut}}><a href="/dev">WEBDEV</a></div>
-            <div class="text-sm italic opacity-50" transition:fly={{ delay: 1000, duration: 5000, y: 100, easing: expoOut}}><a href="https://twitch.tv/kabaww">(and other stuff)</a></div>
+            <div class="text-sm italic opacity-50" transition:fly={{ delay: 1000, duration: 5000, y: 100, easing: expoOut}}><a href="https://avante-guard.com/">(and other stuff)</a></div>
         </div>
         <div class="flex flex-col align-middle items-center mt-14 drop-shadow-[0_0_25px_rgba(var(--color-primary-500))]" transition:blur={{ delay: 1500, duration: 5000, easing: expoOut}}>
             <div class="anton-font h4">HIRE ME:</div>
