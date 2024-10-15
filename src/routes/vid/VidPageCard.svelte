@@ -1,6 +1,10 @@
-<script>
+<script lang='ts'>
 
     import Icon from "$lib/components/Icon.svelte";
+
+    export let triggerModal;
+
+    export let item
 
     let extraClasses;
     export { extraClasses as class };
@@ -9,7 +13,13 @@
 <div class={`${extraClasses} card rounded-lg overflow-hidden variant-glass-primary dark:variant-soft-primary text-base-token dark:text-dark-token border-secondary-500 dark:border-secondary-300 border-2`}>
     <!-- bg-surface-600 dark:bg-primary-300 text-primary-300 dark:text-surface-600 -->
     <div class="flex flex-col size-full overflow-hidden">
-        <img class="size-full object-cover" src="https://ik.imagekit.io/joshmutia/joshmutia.com/duotone/editbts.png" alt="Davinci Resolve" />
+        <button class="size-full relative hover:brightness-150 hover:scale-105 transition-all duration-500 ease-bruh" on:click={triggerModal(item)}>
+            <img class="size-full object-cover" src="https://ik.imagekit.io/joshmutia/joshmutia.com/duotone/editbts.png" alt="Davinci Resolve" />
+            <div class="flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center flex-col text-[#b8662d]">
+                <!-- <h1 class="text-5xl font-black">3D</h1> -->
+                <h1 class="text-5xl h1">3D DEMO REEL</h1>
+            </div>
+        </button>
         <div class="flex px-5 py-4">
             <div class="flex flex-col size-full items-start content-between">
                 <div class="text-xs sm:text-2xl">video editing</div>

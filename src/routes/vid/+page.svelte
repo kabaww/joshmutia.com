@@ -33,7 +33,7 @@
 
         {#each items as item}
             {#if item.component}
-                <VidPageCard class={item.class} />
+                <VidPageCard class={item.class} {triggerModal} {item}/>
             {:else}
                 <button class={`rounded-lg overflow-hidden ${item.class}`} on:click={triggerModal(item)}>
                     <img src={item.img} alt={item.title} class={`object-cover object-center size-full hover:brightness-150 hover:scale-105 transition-all duration-500 ease-bruh`} />
