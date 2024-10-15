@@ -20,7 +20,10 @@ export const vidWorks = [
         class: 'row-span-1 sm:row-span-1'
     },
     { 
-        component: true, 
+        component: true,
+        video: "1019827459",
+        title: "3D Demo Reel 2024",
+        subtitle: "modelling, animation, rendering, compositing, and editing",
         class: 'sm:row-span-2 row-span-4 text-xs' 
     },
     { 
